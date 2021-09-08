@@ -1,0 +1,33 @@
+
+.form {
+    width: 100%;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    label {
+        flex: 0 0 10rem;
+        color: $white;
+    }
+
+    input {
+        flex: 1;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: none;
+    }
+}
+
+.alert {
+    padding: 1.2rem;
+    text-align: center;
+    color: $white;
+    width: 100%;
+    display: block;
+
+    &.error {
+        background-color: rgb(194, 0, 0);
+    }
+}

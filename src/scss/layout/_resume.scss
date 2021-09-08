@@ -1,0 +1,41 @@
+
+.invalid-date {
+    text-align: center;
+    margin: 2.5rem 0;
+    text-transform: uppercase;
+}
+
+.resume-content {
+    margin-bottom: 1.2rem;
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+
+    span {
+        font-weight: $bold;
+        color: $blue;
+        font-size: 2.4rem;
+    }
+
+    h3 {
+        margin: 4rem 0;
+    }
+    .services-resume {
+
+        .service-container {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #43453c;
+            .service-price {
+                font-weight: $bold;
+                color: $blue;
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+    .total {
+        text-align: right;
+    }
+}

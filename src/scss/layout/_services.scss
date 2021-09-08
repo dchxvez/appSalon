@@ -1,0 +1,34 @@
+.services-list {
+
+    @include phone {
+        @include grid(2, 2rem);
+    }
+
+    .service {
+        background-color: $white;
+        border-radius: 10px;
+        padding: $separation / 2;
+        margin-bottom: 2rem;
+
+        @include phone {
+            margin-bottom: 0;
+        }
+        .service-name {
+            color: $black;
+            margin-bottom: 1.2rem;
+        }
+
+        .service-price {
+            color: $blue;
+            font-size: 3rem;
+            font-weight: $bold;
+        }
+        &.selected {
+            background-color: $blue;
+            p {
+                color: white;
+            }
+        }
+    }
+
+}

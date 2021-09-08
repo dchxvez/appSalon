@@ -1,0 +1,37 @@
+
+body {
+    background-color: $black;
+}
+
+.barber-container {
+    
+    @include tablet {
+        height: 100vh;
+        @include grid(2, $separation / 2);
+    }
+    
+    .img {
+        height: 30rem;
+        background-image: url(../img/1.jpg);
+        background-size: cover;
+        background-position: center center;
+        @include tablet {
+            height: auto;
+        }
+    }
+}
+
+.app {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: $separation / 2;
+
+    .section {
+        display: none;
+        margin-top: $separation / 1.5;
+    }
+}
+
+.show-section {
+    display: block!important;
+}

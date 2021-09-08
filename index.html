@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Salón de Belleza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+
+    <div class="barber-container">
+        <div class="img"></div>
+        <div class="app">
+            <header class="header">
+                <h1>App Peluqueria</h1>
+            </header>
+            <nav class="tabs">
+                <button type="button" data-tab="1">Servicios</button>
+                <button type="button" data-tab="2">Información Cliente</button>
+                <button type="button" data-tab="3">Resumen</button>
+            </nav>
+
+
+            <!-- Inicia contenido APP -->
+
+            <div id="tab-1" class="section">
+                <h2>Servicios</h2>
+                <p class="text-center">Elige tus servicios a continuación</p>
+                <div id="services" class="services-list"></div>
+            </div>
+
+            <div id="tab-2" class="section">
+                <h2>Tus Datos y Cita</h2>
+                <p class="text-center">Coloca tus datos y fecha de tu cita</p>
+                <form action="" class="form">
+                    <div class="field">
+                        <label for="name">Nombre</label>
+                        <input id="name" type="text" placeholder="Tu Nombre">
+                    </div>
+                    <div class="field">
+                        <label for="date">Fecha</label>
+                        <input id="date" type="date">
+                    </div>
+                    <div class="field">
+                        <label for="hour">Hora</label>
+                        <input id="hour" type="time" min="10:00" max="20:00">
+                    </div>
+                </form>
+            </div>
+
+            <div id="tab-3" class="section resume-content">
+                <h2>Resumen</h2>
+            </div>
+
+            <div class="pagination">
+                <button id="prev">&laquo;Anterior</button>
+                <button id="next">Siguiente&raquo;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="build/js/bundle.js"></script>
+</body>
+</html>
